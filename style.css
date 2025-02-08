@@ -104,13 +104,13 @@ nav ul li a:hover {
 /* Services Section - Extended */
 .services {
     padding: 80px 10%;
-    background-color: #dda15e;
+    background-color: #f0f4c3;
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5rem;
-    color: #fefae0;
+    color: #283618;
     margin-bottom: 30px;
 }
 
@@ -150,7 +150,7 @@ nav ul li a:hover {
 .card h3 {
     font-size: 1.8rem; /* Increased size */
     padding: 20px 15px 5px;
-    color: #dda15e;
+    color: #fefae0;
     text-align: center;
 }
 
