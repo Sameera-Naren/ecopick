@@ -1,0 +1,572 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fefae0;
+    color: #283618;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #606c38;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: #dda15e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #dda15e;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #283618; /* Keep previous dark background */
+}
+
+.hero .text-content {
+    max-width: 50%;
+    color: #fefae0;
+}
+
+.hero .text-content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero .text-content p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #fefae0;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #bc6c25;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #dda15e;
+}
+
+/* Hero Image Styling */
+.hero .image-content img {
+    width: 500px; /* Adjust for responsiveness */
+    height: auto;
+    border-radius: 30px; /* Matches the reference image */
+    object-fit: cover;
+}
+
+
+
+
+/* Services Section */
+.services {
+    padding: 40px;
+    background-color: #f0f4c3;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    color: #283618;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 10px 5px;
+    color: #606c38;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: #283618;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #283618;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Details Page Styling */
+.details {
+    padding: 50px;
+    text-align: center;
+}
+
+.details ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.details ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Back Button Styling */
+.back-button {
+    text-decoration: none;
+    color: #bc6c25;
+    font-size: 18px;
+    display: block;
+    margin: 20px;
+}
+
+.back-button:hover {
+    color: #dda15e;
+}
+
+/* Decorations Page Styling */
+/* Main Body Section */
+.decorations-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: var(--background-color);
+}
+
+.decorations-content {
+    max-width: 50%;
+}
+
+.decorations-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.decorations-content p {
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+    margin-bottom: 20px;
+}
+
+.decorations-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.decorations-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.decorations-image {
+    max-width: 45%;
+}
+
+.decorations-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.decorations-sub {
+    padding: 40px;
+    background-color: #f0f4c3;
+    text-align: center;
+}
+
+.decorations-sub h2 {
+    color: #283618;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.decorations-sub ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.decorations-sub li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #606c38;
+}
+
+.decorations-sub li strong {
+    color: #bc6c25;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .decorations-sub ul {
+        padding: 0 20px;
+    }
+}
+
+/* Main Body Section for Catering */
+.catering-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ded6a1; /* Match index and decorations pages */
+    padding: 80px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text-content h1 {
+    font-size: 3.5rem; /* Keeping it bold and attractive */
+    font-weight: bold;
+    color: #283618; /* Deep Olive */
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #606c38; /* Dark Green */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #bc6c25; /* Burnt Orange */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #dda15e; /* Warm Beige */
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .catering-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-content img {
+        max-width: 100%;
+    }
+}
+
+
+/* Catering Sub Body Section */
+.catering-sub {
+    padding: 40px;
+    background-color: #f0f4c3; /* Same as decorations page */
+    text-align: center;
+}
+
+.catering-sub h2 {
+    color: #283618; /* Deep Olive */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.catering-sub ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.catering-sub li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #606c38; /* Dark Green */
+}
+
+.catering-sub li strong {
+    color: #bc6c25; /* Burnt Orange */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .catering-sub ul {
+        padding: 0 20px;
+    }
+}
+
+.main-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-title {
+    font-size: 58px; /* Bigger & Bolder Font */
+    font-weight: 800;
+    color: #2d6a4f;
+    margin: 0 0 15px 0;
+}
+
+.hero-subtext {
+    font-size: 20px;
+    color: #4a7c59;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2d6a4f;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1b4332;
+}
+
+.image-container {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.responsive-image {
+    max-width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .image-container {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .responsive-image {
+        width: 100%;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-subtext {
+        font-size: 18px;
+    }
+}
+
+
+/* Venue Page Styling */
+.venue-header {
+    background-color: #606c38;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.venue-sub {
+    padding: 40px;
+    background-color: #f0f4c3; /* Same as decorations page */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.venue-sub h2 {
+    color: #283618;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.eco-alternatives {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.eco-alternatives li {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 6px solid #606c38;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    color: #283618;
+}
+
+.eco-alternatives li:hover {
+    background: #dda15e;
+    color: white;
+}
+
+
+
+
+
+
