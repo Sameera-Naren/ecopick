@@ -164,6 +164,96 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+/* Contact Section */
+.contact-section {
+    background-color: #fefae0; /* Light Cream */
+    padding: 50px 10%;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Left Side - Contact Form */
+.contact-form {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: #283618; /* Deep Olive */
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    color: #606c38; /* Dark Green */
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #606c38; /* Dark Green */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    display: block;
+    background-color: #bc6c25; /* Burnt Orange */
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #dda15e; /* Warm Beige */
+}
+
+/* Right Side - Image */
+.contact-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form, .contact-image {
+        max-width: 100%;
+    }
+
+    .contact-form button {
+        width: auto;
+        padding: 10px 20px;
+    }
+}
+
+
 /* Footer */
 footer {
     text-align: center;
