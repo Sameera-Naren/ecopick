@@ -164,95 +164,88 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-/* Contact Section */
+/* Contact Section Styling */
 .contact-section {
     background-color: #fefae0; /* Light Cream */
-    padding: 50px 10%;
-}
-
-.contact-container {
+    padding: 3rem 0;
+  }
+  
+  .contact-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* Left Side - Contact Form */
-.contact-form {
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-form {
     flex: 1;
-    max-width: 50%;
-}
-
-.contact-form h2 {
+  }
+  
+  .contact-form h2 {
     font-size: 1.8rem;
+    font-weight: bold;
+    font-style: italic;
     color: #283618; /* Deep Olive */
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    display: block;
-    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  
+  .vertical-form label {
+    font-weight: bold;
     color: #606c38; /* Dark Green */
-    margin-top: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
+  }
+  
+  .vertical-form input,
+  .vertical-form textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #606c38; /* Dark Green */
+    padding: 8px;
+    border: 1px solid #bc6c25; /* Burnt Orange */
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    display: block;
+  }
+  
+  .vertical-form button {
     background-color: #bc6c25; /* Burnt Orange */
     color: white;
-    font-size: 1.2rem;
-    padding: 10px;
-    width: 100%;
     border: none;
-    border-radius: 5px;
-    margin-top: 15px;
+    padding: 10px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
+    border-radius: 5px;
+  }
+  
+  .vertical-form button:hover {
     background-color: #dda15e; /* Warm Beige */
-}
-
-/* Right Side - Image */
-.contact-image {
+  }
+  
+  .contact-image {
     flex: 1;
-    max-width: 50%;
-}
-
-.contact-image img {
+  }
+  
+  .contact-image img {
     width: 100%;
+    max-width: 400px;
     border-radius: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
     .contact-container {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
-    .contact-form, .contact-image {
-        max-width: 100%;
+  
+    .contact-image img {
+      max-width: 100%;
     }
-
-    .contact-form button {
-        width: auto;
-        padding: 10px 20px;
-    }
-}
-
+  }
+  
 
 /* Footer */
 footer {
