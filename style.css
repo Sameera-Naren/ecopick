@@ -104,7 +104,7 @@ nav ul li a:hover {
 /* Services Section - Extended */
 .services {
     padding: 80px 10%;
-    background-color: #283618;
+    background-color: #dda15e;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 /* Card Styling */
 .card {
-    background-color: white;
+    background-color: #f0f4c3;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
