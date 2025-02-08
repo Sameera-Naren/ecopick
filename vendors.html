@@ -1,23 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco-Friendly Vendor Directory - EcoPick</title>
+    <title>Vendors - Eco Friendly Vendor Directory</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e8f5e9, #f1f8e9);
+            color: #2e4d38;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #76b852, #8dc26f);
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 900px;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            background: #f9fbe7;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: #3e4d3f;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #6b8e23;
+            margin-bottom: 30px;
+        }
+
+        .vendor-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .vendor-card {
+            background: white;
+            border: 1px solid #c9d9a6;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+            position: relative;
+        }
+
+        .vendor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .vendor-card h3 {
+            font-size: 22px;
+            color: #2e7d32;
+            border-bottom: 2px solid #c9d9a6;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .vendor-card p {
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .vendor-card strong {
+            color: #4b5d47;
+            font-weight: bold;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header, .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="back-button">← Back to Home</a>
-    </header>
-    <section class="details">
-        <h1>Eco-Friendly Vendor Directory</h1>
-        <p>Find sustainable vendors for your event.</p>
-        <ul>
-            <li>Eco-friendly caterers</li>
-            <li>Reusable decoration suppliers</li>
-            <li>Sustainable event planners</li>
-        </ul>
-    </section>
+
+<header>
+    Eco-Friendly Event Planning
+</header>
+
+<div class="container">
+    <h1>Eco-Friendly Vendor Directory</h1>
+    <h2>Connecting You with Sustainable Solutions</h2>
+
+    <div class="vendor-section">
+        <div class="vendor-card">
+            <h3>Event Venues</h3>
+            <p><strong>Palm Gardens:</strong> Kidangoor, Kerala</p>
+            <p>📞 +91-9876543210</p>
+            </p>✉ palm.gardens@example.com</p>
+            <p><strong>BTH Sarovaram:</strong> NH Bypass, Kochi, Kerala</p>
+            <p>📞 +91-9123456789</p>
+            </p>✉ bth.sarovaram@example.com</p>
+            <p><strong>Innate Conventional Eco Land:</strong> Desom, Aluva, Kerala</p>
+            <p>📞 +91-9988776655</p>
+            </p>✉ innate.ecoland@example.com</p>
+        </div>
+
+        <div class="vendor-card">
+            <h3>Invitations</h3>
+            <p><strong>Papertrailz:</strong> Panampilly Nagar, Kochi, Kerala</p>
+            <p>📞 +91-8877665544</p>
+            </p>✉ papertrailz@example.com</p>
+            <p><strong>The Card Shop:</strong> MG Road, Kochi, Kerala</p>
+            <p>📞 +91-7766554433</p>
+            </p>✉ cardshop@example.com</p>
+            <p><strong>EcoInvites:</strong> Online service based in Kochi</p>
+            <p>📞 +91-6655443322</p>
+            </p>✉ ecoinvites@example.com</p>
+        </div>
+
+        <div class="vendor-card">
+            <h3>Sustainable Fabrics</h3>
+            <p><strong>Ethicus:</strong> Available online with shipping to Kochi</p>
+            <p>📞 +91-5544332211</p>
+            </p>✉ ethicus@example.com</p>
+            <p><strong>Fabindia:</strong> MG Road, Kochi, Kerala</p>
+            <p>📞 +91-4433221100</p>
+            </p>✉ fabindia@example.com</p>
+            <p><strong>Weaver's Village:</strong> Panampilly Nagar, Kochi, Kerala</p>
+            <p>📞 +91-3322110099</p>
+            </p>✉ weaversvillage@example.com</p>
+        </div>
+
+        <div class="vendor-card">
+            <h3>Zero-Waste Catering</h3>
+            <p><strong>Scenario Weddings:</strong> Kochi, Kerala</p>
+            <p>📞 +91-2211009988</p>
+            </p>✉ scenario.weddings@example.com</p>
+            <p><strong>Café Papaya:</strong> Palarivattom, Kochi, Kerala</p>
+            <p>📞 +91-1100998877</p>
+            </p>✉ cafepapaya@example.com</p>
+            <p><strong>The Yellow Chilli:</strong> Edappally, Kochi, Kerala</p>
+            <p>📞 +91-0099887766</p>
+            </p>✉ yellowchilli@example.com</p>
+        </div>
+
+        <div class="vendor-card">
+            <h3>Eco-Friendly Decorations & Flowers</h3>
+            <p><strong>Maatam:</strong> Kochi, Kerala</p>
+            <p>📞 +91-9988776655</p>
+            </p>✉ maatam@example.com</p>
+            <p><strong>Green Blossoms:</strong> Vyttila, Kochi, Kerala</p>
+            <p>📞 +91-8877665544</p>
+            </p>✉ greenblossoms@example.com</p>
+            <p><strong>Eco Décor:</strong> Fort Kochi, Kerala</p>
+            <p>📞 +91-7766554433</p>
+            </p>✉ ecodecor@example.com</p>
+        </div>
+
+        <div class="vendor-card">
+            <h3>Photography & Videography</h3>
+            <p><strong>Weva Photography:</strong> Palarivattom, Kochi, Kerala</p>
+            <p>📞 +91-6655443322</p>
+            </p>✉ wevaphotography@example.com</p>
+            <p><strong>Magic Motion Media:</strong> Edappally, Kochi, Kerala</p>
+            <p>📞 +91-5544332211</p>
+            </p>✉ magicmotion@example.com</p>
+            <p><strong>Green Lens Studio:</strong> Kaloor, Kochi, Kerala</p>
+            <p>📞 +91-4433221100</p>
+            </p>✉ greenlens@example.com</p>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
