@@ -26,18 +26,6 @@
 ### Technologies/Components Used
 For Software:
 - [HTML,CSS]
-- 
-- 
-- 
-
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
 
 ### Project Documentation
 For Software:
